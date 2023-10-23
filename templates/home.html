@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Placement Predictor after MBA Degree</title>
+    <style>
+        body {
+            background-image: url("C:\Users\Dell\Desktop\Projects ML\Placement-MBA-Prediction-Model\templates\Best-Background-Wallpapers-HD-Free-Download.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            background-color: rgba(224, 255, 255, 0.9);
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .predict {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 230px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .predict:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>House Rent Predictor</h1>
+    <form action="/predict" method="post">
+        <label for="BHK">Enter BHK:</label>
+        <input type="text" name="BHK" id="BHK">
+        <label for="Size">Enter Size(Area):</label>
+        <input type="text" name="Size" id="Size">
+        <label for="Floor">Enter On Wich FLoor:</label>
+        <input type="text" name="Floor" id="Floor">
+        <label for="Bathroom">Enter number of Bathroom:</label>
+        <input type="text" name="Bathroom" id="Bathroom">
+
+        <label for="City">Select Your City:</label>
+        <select name="City" id="City">
+            <option value="Chennai">Chennai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Mumbai">Mumbai</option>
+        </select>
+
+        <label for="Furnishing Status">Select Furnishing Status:</label>
+        <select name="Furnishing Status" id="Furnishing Status">
+            <option value="Semi-Furnished">Semi-Furnished</option>
+            <option value="Unfurnished">Unfurnished</option>
+            <option value="Furnished">Furnished</option>
+        </select>
+
+        <label for="Point of Contact">Select Point of Contact:</label>
+        <select name="Point of Contact" id="Point of Contact">
+            <option value="Contact Owner">Contact Owner</option>
+            <option value="Contact Agent">Contact Agent</option>
+            <option value="Contact Builder">Contact Builder</option>
+        </select>
+        
+        <button type="submit" class="predict">Predict</button>
+    </form>
+</body>
+</html>
