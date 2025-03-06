@@ -1,7 +1,7 @@
 from flask import Flask,request,render_template
 import pandas as pd
 import pickle
-# App Create
+# App Create 
 app=Flask(__name__)
 
 def predict_input_data(input_df):
